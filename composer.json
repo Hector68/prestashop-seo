@@ -1,19 +1,30 @@
 {
-    "name": "hector68/prestashop-seo",
-    "description": "base seo module for prestashop 1.7.*",
-    "type": "prestashop-module",
-    "require": {
-        "php": ">=5.5.0"
-    },
-    "require-dev" : {
-        "codeception/codeception": "^2.2"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Dmitriy Ronzhin",
-            "email": "hector.tmb@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "hector68/prestashop-seo",
+  "description": "base seo module for prestashop 1.7.*",
+  "type": "prestashop-module",
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.2",
+    "satooshi/php-coveralls": "^1.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitriy Ronzhin",
+      "email": "hector.tmb@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hector68\\PrestashopSeo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hector68\\PrestashopSeo\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev"
 }
